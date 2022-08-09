@@ -1,5 +1,66 @@
 .containerContent {
-    width:100%;
+    width:90%;
+    margin: auto;
     height: calc(100vh - 60px);
-    background-color: aqua;
+    color: #fff;
+
+
+    .wrapper1 {
+        padding: 90px 0;
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // padding: 50px 0;
+            // background-color: aqua;
+    
+    
+            .left{
+                background-color: red;
+                
+            }
+    
+             .right {
+                direction: rtl;
+                
+                .title {
+                    font-size: 3rem;
+        
+                    .titleActive{
+                        color: #a20717;
+                    }
+                }
+        
+                .desc{
+                    margin: 25px 0 35px 0;
+                    font-size: 25px;
+                }
+        
+                .linkBtn {
+                    color: #a20717;
+                }
+        
+                .btn{
+                    padding: 7px 20px;
+                    background-color: aliceblue;
+                    font-size: 20px;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+        
+                .btnActive{
+                    margin-right: 20px;
+                    border: 1px solid #fff;
+                    background-color: inherit;
+                    color: #fff;
+        
+                    .fa {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
 }

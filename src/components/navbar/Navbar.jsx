@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
         <div className='right'>
-          <a className='link' href='/'>الرئيسية</a>
+          <a className='link active' href='/'>الرئيسية</a>
           <a className='link' href='/'>المنتجات</a>
           <a className='link' href='/'>من نحن</a>
           <a className='link' href='/'>اتصل بنا</a>
