@@ -1,0 +1,35 @@
+.container {
+    background: #202020;
+    height: 60px;
+    
+
+
+    .wrapper {
+        // padding:10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .left .logo {
+        color: #a20717;
+    }
+
+
+    .wrapper .right .link {
+        margin-left: 50px;
+        color: white;
+        font-size: 17px;
+        padding: 5px 13px;
+        border-radius: 3px;
+        font-weight: 500;
+        display: inline-block ;
+
+        &:hover{
+            background: #a20717;
+            transition: .5s;
+        }
+    }
+}
