@@ -17,9 +17,6 @@ const Navbar = () => {
           <a className='link' href='/'>من نحن</a>
           <a className='link' href='/'>اتصل بنا</a>
         </div>
-
-        
-
       </div>
     </div>
   );

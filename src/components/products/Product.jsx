@@ -1,10 +1,20 @@
 import React from 'react';
+import ShowProducts from './ShowProducts'
+import { DataProducts } from '../../data';
+
+
+
+
 
 const Product = () => {
   return (
-    <div>
-      ssss
-    </div>
+    <>
+
+      {DataProducts.map( (item) => (
+        <ShowProducts item={item}  />
+      ))}
+
+    </>
   );
 }
 
