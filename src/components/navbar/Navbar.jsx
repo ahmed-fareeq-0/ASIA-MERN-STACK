@@ -13,9 +13,9 @@ const Navbar = () => {
 
         <div className='right'>
           <a className='link active' href='/'>الرئيسية</a>
-          <a className='link' href='/'>المنتجات</a>
-          <a className='link' href='/'>من نحن</a>
-          <a className='link' href='/'>اتصل بنا</a>
+          <a className='link' href='#products'>المنتجات</a>
+          <a className='link' href='#aboute'>من نحن</a>
+          <a className='link' href='#contect'>اتصل بنا</a>
         </div>
       </div>
     </div>

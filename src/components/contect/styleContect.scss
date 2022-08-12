@@ -1,0 +1,76 @@
+.containerContect{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    direction: rtl;
+
+    .titleContect{
+        text-align: center;
+        padding: 35px 0 40px 0;
+        color: #FFF;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+
+        .icons{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 2rem;
+            margin: 20px 0 60px 0;
+            color: #fff;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+
+            
+            input[type="text"],
+            input[type="email"],
+            textarea{
+                background-color: transparent;
+                width: 100%;
+                outline: none;
+                margin-bottom: 30px;
+                border: 1px solid rgb(224, 224, 224);
+                border-radius: 5px;
+                color: #fff;
+            }
+
+            input{
+                margin: 0 0 5px;
+                padding: 10px;
+            }
+
+            textarea{
+                height: 100px;
+                max-width: 100%;
+                resize: none;
+                padding: 10px ;
+            }
+
+            button{
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                background: #a20717;
+                color: #FFF;
+                margin: 0 0 5px;
+                padding: 10px;
+                font-size: 15px;
+            }
+        }
+        
+    }
+
+}
