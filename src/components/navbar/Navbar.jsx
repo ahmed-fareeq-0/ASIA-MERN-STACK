@@ -1,9 +1,16 @@
-
 import './styleNavbar.scss'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import { useState } from 'react'
 
 
 const Navbar = () => {
+
+  const [show, setShow] = useState(false)
+
+  // sohw Hamburger 
+  const showHamburger = () => {
+    setShow(!show)
+  } 
 
   return (
 
@@ -29,17 +36,18 @@ const Navbar = () => {
 
 {/* ------------------------------------------ */}
         <div className='wrpperResponsive'>
-          <GiHamburgerMenu className='iconHamburger' />
+          <GiHamburgerMenu className='iconHamburger' onClick={ () => showHamburger()} />
 
           <a className='logoResponsive' href='/'><h1>اسيا</h1></a>
         </div>
 
-        <div className='Hamburger'  >
+        <div className='Hamburger' style={show ? {display:'flex'} : {display:'none'}} >
           <a className='link active' href='#about'>الرئيسية</a>
             <a className='link' href='#products'>المنتجات</a>
             <a className='link' href='#about'>من نحن</a>
             <a className='link' href='#contect'>اتصل بنا</a>
         </div>
+
 {/* -------------------------------------- */}
 
 
