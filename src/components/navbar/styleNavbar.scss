@@ -11,30 +11,140 @@
         justify-content: space-between;
         width: 90%;
         margin: auto;
-    }
+        // padding: 13px 0;
+  
+        .right .link {
+            margin-left: 50px;
+            color: white;
+            font-size: 17px;
+            padding: 5px 13px;
+            border-radius: 3px;
+            font-weight: 500;
+            display: inline-block ;
 
-    .left .logo {
-        color: #a20717;
-    }
+            
 
+            &:hover{
+                background: #a20717;
+                transition: .5s;
+            }
 
-    .wrapper .right .link {
-        margin-left: 50px;
-        color: white;
-        font-size: 17px;
-        padding: 5px 13px;
-        border-radius: 3px;
-        font-weight: 500;
-        display: inline-block ;
-
-        &:hover{
-            background: #a20717;
-            transition: .5s;
         }
 
+        .right .LinkLeft {
+            margin-left: 0;
+        }
+
+        .right .active {
+            background-color: #a20717;
+        }
+
+        .left .logo  {
+            color: #a20717;
+            
+        }
+
+
+        // -------------------
+        // res
+
+        .wrpperResponsive{
+            display: none;
+        }
+
+        .Hamburger{
+            display: none;
+        }
+
+
     }
 
-    .wrapper .right .active {
-        background-color: #a20717;
-    }
+
+
+
+
+
+
 }
+
+@media screen and ( min-width: 320px ) and (max-width: 768px) {
+    .container{
+        
+        
+
+        .wrapper{
+            width: 100%;
+            display: block;
+            padding: 0;
+            // margin: 0;
+            
+            
+            .right{
+                display: none;
+            }
+
+            .left {
+                display: none;
+            }
+
+
+            .wrpperResponsive{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 15px;
+                height: calc(100% - 60px); 
+                
+                
+                
+    
+                .iconHamburger{
+                    font-size: 30px;
+                    color: #fff;
+                }
+
+                .logoResponsive{
+                    font-size: 14px;
+                    color: #a20717;
+                }
+            }
+
+            .Hamburger{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #1d1d1d;
+                // width: 100vh;
+                height: calc(100vh - 50px);  
+                z-index: 2;
+                padding: 100px 0;
+                margin: 0;
+
+                // مهم لتحريك الهمبركر
+                // position: relative;
+                // left: -50px;
+
+                .link{
+                    color: #fff;
+                    text-align: center;
+                    margin-bottom: 30px;
+
+                    &.active{
+                        background-color: #a20717;
+                        padding: 5px 20px;
+                        
+                    }
+
+                    &:hover{
+                        background-color: #a20717;
+                        padding: 5px 20px;
+                    }
+                }
+
+
+
+            }
+
+        }
+    
+    }}

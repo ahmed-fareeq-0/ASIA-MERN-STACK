@@ -11,12 +11,13 @@ const ShowProducts = () => {
     <div className='wrapper'>
             {DataProducts.map((item) => (
                 <div className='Product'> 
-                        <span></span>
+                        {/* <span></span> */}
+                        <img className='imgProduct' src={item.img} alt='' />
                         <div className='productInfo'>
                             <h3 className='titleProduct'>{item.name}</h3>
                             <div className='descProduct'>{item.desc}</div>
                         </div>
-                        <img className='imgProduct' src={item.img} alt='' />
+                        
                 </div> 
             ))}
       </div>

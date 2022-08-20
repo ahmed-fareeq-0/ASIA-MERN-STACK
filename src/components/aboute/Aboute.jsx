@@ -3,7 +3,7 @@ import './styleAboute.scss'
 
 const Aboute = () => {
   return (
-    <div className='containerAboute' id='aboute'>  
+    <div className='containerAboute' id='about'>  
         <div className='box'>
         <h1 className='titleAboute'>من نحن؟</h1>
         <p className='descAboute'>تأسست شركتنا في عام 1984 وأستمرت في انتاجا المتميز بعلامتي اسيا وكرستال على نطاق واسع في كافة محافظات العراق </p>
