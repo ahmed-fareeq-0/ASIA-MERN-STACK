@@ -10,7 +10,7 @@ const ShowProducts = () => {
     
     <div className='wrapper'>
             {DataProducts.map((item) => (
-                <div className='Product'> 
+                <div className='Product' key={item.id}> 
                         {/* <span></span> */}
                         <img className='imgProduct' src={item.img} alt='' />
                         <div className='productInfo'>

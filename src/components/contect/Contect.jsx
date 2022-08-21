@@ -16,7 +16,7 @@ const Contect = () => {
         <form className='form'>
             <input type='text' placeholder='الأسم' />
             <input type='email' placeholder='البريد الأكتروني' />
-            <textarea placeholder="اكتب رسالتك هنا " tabindex="5" required></textarea>
+            <textarea placeholder="اكتب رسالتك هنا "  required></textarea>
 
             <button>ارسال</button>
         </form>
