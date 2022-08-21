@@ -4,7 +4,7 @@ import {BsFacebook, BsInstagram, BsTelegram} from 'react-icons/bs'
 
 const Contect = () => {
   return (
-    <div className='containerContect' id='contect'>
+    <div className='containerContect' id='contact'>
     <h1 className='titleContect'>أتصل بنا</h1>
       <div className='wrapper'>
         <div className='icons'>

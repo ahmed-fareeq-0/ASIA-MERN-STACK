@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className='wrapper'>
 
       <div className='right'>
-          <a className='link LinkLeft' href='#contect'>اتصل بنا</a>
+          <a className='link LinkLeft' href='#contact'>اتصل بنا</a>
           <a className='link' href='#about'>من نحن</a>
           <a className='link' href='#products'>المنتجات</a>
           <a className='link active' href='#about'>الرئيسية</a>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <a className='link active' href='#about'>الرئيسية</a>
             <a className='link' href='#products'>المنتجات</a>
             <a className='link' href='#about'>من نحن</a>
-            <a className='link' href='#contect'>اتصل بنا</a>
+            <a className='link' href='#contact'>اتصل بنا</a>
         </div>
 
 {/* -------------------------------------- */}

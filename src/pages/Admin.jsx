@@ -5,7 +5,7 @@ import Login from '../components/login/Login';
 const Admin = () => {
   return (
     <div>
-      {/* <Login /> */}
+      <Login />
       {/* <AddProducts /> */}
     </div>
   );
