@@ -1,7 +1,7 @@
 import React from 'react';
 import './Products.scss'
-
 import { DataProducts } from '../../data';
+import CheckUser from './CheckUser';
 
 const ShowProducts = () => {
   return (
@@ -20,6 +20,8 @@ const ShowProducts = () => {
                         
                 </div> 
             ))}
+
+            <CheckUser/>
       </div>
     </div>
   );
