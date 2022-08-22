@@ -3,6 +3,8 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import { useState } from 'react'
 
 
+
+
 const Navbar = () => {
 
   const [show, setShow] = useState(false)
@@ -18,23 +20,16 @@ const Navbar = () => {
       <div className='wrapper'>
 
       <div className='right'>
+          
+          <a className='link' href='/login'>تسجيل الدخول</a>
+          
           <a className='link LinkLeft' href='#contact'>اتصل بنا</a>
           <a className='link' href='#about'>من نحن</a>
           <a className='link' href='#products'>المنتجات</a>
           <a className='link active' href='#about'>الرئيسية</a>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-{/* ------------------------------------------ */}
+        
         <div className='wrpperResponsive'>
           <GiHamburgerMenu className='iconHamburger' onClick={ () => showHamburger()} />
 
@@ -46,18 +41,8 @@ const Navbar = () => {
             <a className='link' href='#products'>المنتجات</a>
             <a className='link' href='#about'>من نحن</a>
             <a className='link' href='#contact'>اتصل بنا</a>
+            <a className='link' href='/login'>تسجيل الدخول</a>
         </div>
-
-{/* -------------------------------------- */}
-
-
-
-
-
-
-
-
-
 
         <div className='left'>
           <a className='logo' href='/'><h1>اسيا</h1></a>
