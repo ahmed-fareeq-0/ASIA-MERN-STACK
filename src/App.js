@@ -1,11 +1,12 @@
 import Home from "./pages/Home";
 import './App.scss'
 import Login from './pages/login/Login.jsx'
-
-import { BrowserRouter as Router ,  Route, BrowserRouter,  } from "react-router-dom";
 import AddProducts from "./pages/addProducts/AddProducts";
+import { BrowserRouter as Router ,  Route, BrowserRouter  } from "react-router-dom";
+
 
 function App() {
+
   return (
     <>
     <div className="app">

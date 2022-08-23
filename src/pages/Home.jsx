@@ -7,6 +7,7 @@ import ShowProducts from '../components/products/ShowProducts';
 
 
 const Home = () => {
+  
   return (
     <div>
       <Navbar />

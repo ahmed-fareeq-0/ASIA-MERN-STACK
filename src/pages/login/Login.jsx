@@ -46,13 +46,18 @@ const Login = () => {
             name='username'
             placeholder='أسم المستخدم'
             value={user.userName}
-            onChange={handleChange} />
+            onChange={handleChange} 
+            required
+            />
+
         <input 
             type='password' 
             name='password'
             value={user.password}
             placeholder='كلمة المرور'
-            onChange={handleChange}/>
+            onChange={handleChange}
+            required
+            />
         <button onClick={loginUser}>تسجيل الدخول</button>
         </form>
 

@@ -20,13 +20,10 @@ const Navbar = () => {
       <div className='wrapper'>
 
       <div className='right'>
-          
-          <a className='link' href='/login'>تسجيل الدخول</a>
-          
           <a className='link LinkLeft' href='#contact'>اتصل بنا</a>
           <a className='link' href='#about'>من نحن</a>
           <a className='link' href='#products'>المنتجات</a>
-          <a className='link active' href='#about'>الرئيسية</a>
+          <a className='link active' href='#content'>الرئيسية</a>
         </div>
 
         
@@ -37,11 +34,11 @@ const Navbar = () => {
         </div>
 
         <div className='Hamburger' style={show ? {display:'flex'} : {display:'none'}} >
-          <a className='link active' href='#about'>الرئيسية</a>
+          <a className='link active' href='#content'>الرئيسية</a>
             <a className='link' href='#products'>المنتجات</a>
             <a className='link' href='#about'>من نحن</a>
             <a className='link' href='#contact'>اتصل بنا</a>
-            <a className='link' href='/login'>تسجيل الدخول</a>
+            
         </div>
 
         <div className='left'>
