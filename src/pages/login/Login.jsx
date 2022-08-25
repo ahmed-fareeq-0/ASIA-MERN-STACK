@@ -1,9 +1,7 @@
-import React from 'react';
 import './styleLogin.scss'
-
 import axios from 'axios'
-
 import { useState } from 'react';
+
 
 const Login = () => {
 
@@ -12,6 +10,7 @@ const Login = () => {
     password: ""
   })
 
+  
   const handleChange = (e) => {
     e.preventDefault();
     const newUser = { ...user };
@@ -19,9 +18,9 @@ const Login = () => {
     setUser(newUser)
   }
 
-  const loginUser = (e) => {
+  const loginUser = async (e) => {
     e.preventDefault()
-    axios.post('https://asiapaint-server.herokuapp.com/admin/login', user).then(
+    await axios.post('https://asiapaint-server.herokuapp.com/admin/login', user).then(
       (res) => {
         if (res.data === "bad passowrd" || res.data === "User NOT Found!!!") {
           alert(res.data)
@@ -37,30 +36,29 @@ const Login = () => {
   return (
     <div className='containerLogin'>
 
-        <h1 className='titleLogin'>تسجيل الدخول</h1>
+      <h1 className='titleLogin'>تسجيل الدخول</h1>
+
       <div className='wrapper'>
+        <form className='form'>
+          <input 
+              type='username'
+              name='username'
+              placeholder='أسم المستخدم'
+              value={user.userName}
+              onChange={handleChange} 
+              required
+              />
 
-      <form className='form'>
-        <input 
-            type='username'
-            name='username'
-            placeholder='أسم المستخدم'
-            value={user.userName}
-            onChange={handleChange} 
-            required
-            />
-
-        <input 
-            type='password' 
-            name='password'
-            value={user.password}
-            placeholder='كلمة المرور'
-            onChange={handleChange}
-            required
-            />
-        <button onClick={loginUser}>تسجيل الدخول</button>
+          <input 
+              type='password' 
+              name='password'
+              value={user.password}
+              placeholder='كلمة المرور'
+              onChange={handleChange}
+              required
+              />
+          <button onClick={loginUser}>تسجيل الدخول</button>
         </form>
-
       </div>
     </div>
   );
