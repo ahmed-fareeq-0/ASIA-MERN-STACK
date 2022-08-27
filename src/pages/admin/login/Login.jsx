@@ -38,8 +38,8 @@ const Login = () => {
 
       <h1 className='titleLogin'>تسجيل الدخول</h1>
 
-      <div className='wrapper'>
-        <form className='form'>
+      <div className='wrapperLogin'>
+        <form className='formLogin'>
           <input 
               type='username'
               name='username'

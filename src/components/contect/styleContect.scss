@@ -10,14 +10,14 @@
         color: #FFF;
     }
 
-    .wrapper {
+    .wrapperContact{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
 
 
-        .icons{
+        .iconsContact{
             width: 50%;
             display: flex;
             justify-content: space-around;
@@ -26,7 +26,7 @@
             color: #fff;
         }
 
-        .form {
+        .formContact{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -83,15 +83,15 @@
             font-size: 26px;
 
         }
-        .wrapper {
+        .wrapperContact {
 
-            .icons{
+            .iconsContact{
 
                 width: 100%;
                 margin: 40px 0;
             }
 
-            .form{
+            .formContact{
                 width: 100%;
             }
 

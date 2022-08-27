@@ -4,22 +4,22 @@
     margin: auto;
     // height: 100vh;
     
-    .containerCheckUser{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .checkUserButton{
-            color: #fff;
-            font-weight: bold;
-            padding: 10px 15px ;
-            width: 20%;
-            text-align: center;
-            background-color: #a20717;
-            border-radius: 5px;
-            font-size: 16px;
+    // .containerCheckUser{
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: center;
+    //     .checkUserButton{
+    //         color: #fff;
+    //         font-weight: bold;
+    //         padding: 10px 15px ;
+    //         width: 20%;
+    //         text-align: center;
+    //         background-color: #a20717;
+    //         border-radius: 5px;
+    //         font-size: 16px;
     
-        }
-    }
+    //     }
+    // }
     
 
     .titleProducts{
@@ -28,14 +28,15 @@
         color: #FFF;
     }
 
-    .wrapper{
+    .wrapperShowProducts{
 
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
 
-        .Product{
+        .ProductShow{
+            direction: rtl;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -91,13 +92,13 @@
     .ContainerShowProducts{
         width: 100%;
 
-        .containerCheckUser{
-            width: 90%;
-            .checkUserButton{
-                width: 100%;
-                border-radius: 0;
-            }
-        }
+        // .containerCheckUser{
+        //     width: 90%;
+        //     .checkUserButton{
+        //         width: 100%;
+        //         border-radius: 0;
+        //     }
+        // }
 
         .titleProducts{
             
@@ -108,12 +109,12 @@
             
         }
 
-        .wrapper{
+        .wrapperShowProducts{
             flex-direction: column;
             text-align: center;
             
 
-            .Product{
+            .ProductShow{
                 width: 90%;
                 margin: 20px 0;
                 height: 400px;

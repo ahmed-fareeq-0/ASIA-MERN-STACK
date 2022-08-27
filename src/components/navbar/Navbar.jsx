@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
 
-    <div className='container'>
-      <div className='wrapper'>
+    <div className='containerNavbar'>
+      <div className='wrapperNavbar'>
 
-      <div className='right'>
+      <div className='rightNavbar'>
           <a className='link LinkLeft' href='#contact'>اتصل بنا</a>
           <a className='link' href='#about'>من نحن</a>
           <a className='link' href='#products'>المنتجات</a>
@@ -27,13 +27,13 @@ const Navbar = () => {
         </div>
 
         
-        <div className='wrpperResponsive'>
+        <div className='wrpperResponsiveNavbar'>
           <GiHamburgerMenu className='iconHamburger' onClick={ () => showHamburger()} />
 
           <a className='logoResponsive' href='/'><h1>اسيا</h1></a>
         </div>
 
-        <div className='Hamburger' style={show ? {display:'flex'} : {display:'none'}} >
+        <div className='HamburgerNavbar' style={show ? {display:'flex'} : {display:'none'}} >
           <a className='link active' href='#content'>الرئيسية</a>
             <a className='link' href='#products'>المنتجات</a>
             <a className='link' href='#about'>من نحن</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
             
         </div>
 
-        <div className='left'>
+        <div className='leftNavbar'>
           <a className='logo' href='/'><h1>اسيا</h1></a>
         </div>
 

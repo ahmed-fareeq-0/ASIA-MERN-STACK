@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import './App.scss'
-import Login from './pages/login/Login.jsx'
-import AddProducts from "./pages/addProducts/AddProducts";
+import Login from './pages/admin/login/Login.jsx'
+import AddProducts from "./pages/admin/addProducts/AddProducts";
 import { BrowserRouter as Router ,  Route, BrowserRouter  } from "react-router-dom";
 
 

@@ -8,7 +8,7 @@
     .wrapper1 {
         padding: 100px 0;
 
-        .wrapper {
+        .wrapperContent {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -18,7 +18,7 @@
                 
             }
     
-             .right {
+             .rightContent {
                 direction: rtl;
                 
                 
@@ -78,7 +78,7 @@
             
 
 
-            .wrapper{
+            .wrapperContent{
                 flex-direction: column;
                 
                 
@@ -87,7 +87,7 @@
                     display: none;
                 }
 
-                .right{
+                .rightContent{
                     z-index: -1;
                     
                     .title{

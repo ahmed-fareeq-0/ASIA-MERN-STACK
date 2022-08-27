@@ -1,10 +1,10 @@
-.container {
+.containerNavbar {
     background: #202020;
     height: 60px;
     
 
 
-    .wrapper {
+    .wrapperNavbar {
         // padding:10px 20px;
         display: flex;
         align-items: center;
@@ -13,7 +13,7 @@
         margin: auto;
         // padding: 13px 0;
   
-        .right .link {
+        .rightNavbar .link {
             margin-left: 50px;
             color: white;
             font-size: 17px;
@@ -31,15 +31,15 @@
 
         }
 
-        .right .LinkLeft {
+        .rightNavbar .LinkLeft {
             margin-left: 0;
         }
 
-        .right .active {
+        .rightNavbar .active {
             background-color: #a20717;
         }
 
-        .left .logo  {
+        .leftNavbar .logo  {
             color: #a20717;
             
         }
@@ -48,11 +48,11 @@
         // -------------------
         // res
 
-        .wrpperResponsive{
+        .wrpperResponsiveNavbar{
             display: none;
         }
 
-        .Hamburger{
+        .HamburgerNavbar{
             display: none;
         }
 
@@ -68,27 +68,27 @@
 }
 
 @media screen and ( min-width: 320px ) and (max-width: 768px) {
-    .container{
+    .containerNavbar{
         height: 52px;
         
 
-        .wrapper{
+        .wrapperNavbar{
             width: 100%;
             display: block;
             padding: 0;
             // margin: 0;
             
             
-            .right{
+            .rightNavbar{
                 display: none;
             }
 
-            .left {
+            .leftNavbar {
                 display: none;
             }
 
 
-            .wrpperResponsive{
+            .wrpperResponsiveNavbar{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -111,7 +111,7 @@
                 }
             }
 
-            .Hamburger{
+            .HamburgerNavbar{
                 display: none;
                 flex-direction: column;
                 align-items: center;

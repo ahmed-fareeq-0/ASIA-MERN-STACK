@@ -25,14 +25,14 @@ const Contect = () => {
   return (
     <div className='containerContect' id='contact'>
     <h1 className='titleContect'>أتصل بنا</h1>
-      <div className='wrapper'>
-        <div className='icons'>
+      <div className='wrapperContact'>
+        <div className='iconsContact'>
         <BsFacebook className='icon'/>
         <BsInstagram className='icon'/>
         <BsTelegram className='icon'/>
         </div>
 
-        <form className='form' ref={form} onSubmit={sendEmail}>
+        <form className='formContact' ref={form} onSubmit={sendEmail}>
             <input type='text' placeholder='الأسم' required name='user_name'/>
             <input type='email' placeholder='البريد الأكتروني' name='user_email' />
             <textarea placeholder="اكتب رسالتك هنا " required name='message'></textarea>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Products.scss'
 import { DataProducts } from '../../data';
-import CheckUser from './CheckUser';
+// import CheckUser from './CheckUser';
 
 const ShowProducts = () => {
 
@@ -10,9 +10,9 @@ const ShowProducts = () => {
     <div className='ContainerShowProducts' id='products'>
     <h1 className='titleProducts'>المنتجات</h1>
     
-    <div className='wrapper'>
+    <div className='wrapperShowProducts'>
             {DataProducts.map((item) => (
-                <div className='Product' key={item.id} > 
+                <div className='ProductShow' key={item._id} > 
                         
                         <img className='imgProduct' src={item.img} alt='' />
                         <div className='productInfo'>
@@ -22,7 +22,7 @@ const ShowProducts = () => {
                 </div> 
             ))}
 
-            <CheckUser/>
+            {/* <CheckUser/> */}
       </div>
     </div>
   );
