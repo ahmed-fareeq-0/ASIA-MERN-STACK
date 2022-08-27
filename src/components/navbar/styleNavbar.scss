@@ -1,6 +1,9 @@
 .containerNavbar {
     background: #202020;
+    opacity: 0.9;
     height: 60px;
+    position: fixed;
+    width: 100%;
     
 
 
@@ -70,6 +73,8 @@
 @media screen and ( min-width: 320px ) and (max-width: 768px) {
     .containerNavbar{
         height: 52px;
+        position: static;
+        opacity: 1;
         
 
         .wrapperNavbar{

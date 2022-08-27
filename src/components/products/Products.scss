@@ -4,24 +4,6 @@
     margin: auto;
     // height: 100vh;
     
-    // .containerCheckUser{
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: center;
-    //     .checkUserButton{
-    //         color: #fff;
-    //         font-weight: bold;
-    //         padding: 10px 15px ;
-    //         width: 20%;
-    //         text-align: center;
-    //         background-color: #a20717;
-    //         border-radius: 5px;
-    //         font-size: 16px;
-    
-    //     }
-    // }
-    
-
     .titleProducts{
         text-align: center;
         padding: 35px 0 40px 0;
@@ -35,113 +17,173 @@
         align-items: center;
         flex-wrap: wrap;
 
-        .ProductShow{
-            direction: rtl;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+        .wrapperProduct{
             background-color: rgb(255, 255, 255);
             width: 48%;
-            height: 220px;
+            height: 250px;
             margin-bottom: 40px;
             border-radius: 20px;
 
-            span {
-                height: 220px;
-                width: 30px;
-                border-top-left-radius: 18px;
-                border-bottom-left-radius: 18px;
-                background-color: #a20717;
-            } 
-
-            .productInfo{
-                margin-right: 0px;
+            .ProductShow{
                 direction: rtl;
-                width: 300px;
-                margin: 0 40px 0 20px;
-                
-
-                .titleProduct{
-                    margin-bottom: 20px;
-                    font-size: 23px;
-                    letter-spacing: 1px;
-                    color: #2a2a2a;
-                }
-
-                .descProduct{
-                    width: 90%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+    
+    
+    
+                // span {
+                //     height: 220px;
+                //     width: 30px;
+                //     border-top-left-radius: 18px;
+                //     border-bottom-left-radius: 18px;
+                //     background-color: #a20717;
+                // } 
+    
+                .productInfo{
+                    margin-right: 0px;
+                    direction: rtl;
+                    width: 300px;
+                    margin: 0 40px 0 20px;
                     
+    
+                    .titleProduct{
+                        margin-bottom: 20px;
+                        font-size: 23px;
+                        letter-spacing: 1px;
+                        color: #2a2a2a;
+                    }
+    
+                    .descProduct{
+                        width: 90%;
+                        
+                    }
                 }
+    
+                .imgProduct{
+                    width: 200px;
+                    margin-right: 20px;
+    
+                }
+    
+    
             }
+        }
 
-            .imgProduct{
-                width: 200px;
-                margin-right: 20px;
-
+        .adminBtns{
+            
+            
+            .edit,
+            .del{
+                font-weight: bold;
+                color: #fff;
+                font-size: 18px;
+                background-color: #a20717;
+                padding: 3px 20px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                margin-left: 40px;
             }
+        }
+    }
 
+    .addProductToHome{
+        text-align: center;
 
+        .add{
+            font-weight: bold;
+            color: #fff;
+            font-size: 20px;
+            background-color: #fff;
+            color: #a20717;
+            padding: 10px 30px;
+            outline: none;
+            border: none;
+            width: 20%;
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-radius: 30px;
         }
     }
 }
 
 
-
-
 @media screen and (min-width:320px) and (max-width:768px) {
     .ContainerShowProducts{
-        width: 100%;
+        width: 90%;
 
-        // .containerCheckUser{
-        //     width: 90%;
-        //     .checkUserButton{
-        //         width: 100%;
-        //         border-radius: 0;
-        //     }
-        // }
 
         .titleProducts{
             
             // padding: 0 0 40px 0;
             padding: 20px 0 0 0 ;
-            
             font-size: 26px;
             
         }
 
         .wrapperShowProducts{
+            width: 100%;
             flex-direction: column;
             text-align: center;
             
 
-            .ProductShow{
-                width: 90%;
-                margin: 20px 0;
-                height: 400px;
-                flex-direction: column;
-                justify-content: center;
+            .wrapperProduct{
+                
+                display: flex;
+                justify-content: space-between;
                 align-items: center;
-
-                .productInfo{
-                    margin:0;
-                    // direction: rtl;
-                    width: 100%;
-
-
-                    .descProduct{
-                        width: 90%;
-                        margin: auto;
-
-                        
-                    }
+                flex-direction: column;
+                margin:20px 0 ;
+                width: 100%;
+                height: 100%;
+                
+    
+                .ProductShow{
                     
-                }
+                    width: 90%;
+                    margin: 0 0 20px 0;
+                    height: 400px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
-                .imgProduct{
-                    width: 150px;
-                    margin: 10px;
+                    .productInfo{
+                        margin: 0;
+
+                        .descProduct{
+                            width: 100%;
+                        }
+                    }
+
+                    .imgProduct{
+                        width: 180px;
+                        margin: 10px 0;
+                    }
                 }
             }
+
+            .adminBtns{
+                .edit,
+                .del{
+                    margin: 0 0 20px 0;
+                }
+
+                .edit{
+                    margin-right: 50px;
+                }
+            }
+            
         }
+
+        .addProductToHome{
+            text-align: center;
+    
+            .add{
+               width: 100%;
+                border-radius: 10px;
+            }
+        }
+
     }
 }

@@ -6,13 +6,13 @@ import Navbar from '../components/navbar/Navbar';
 import ShowProducts from '../components/products/ShowProducts';
 
 
-const Home = () => {
+const Home = ({ products }) => {
   
   return (
     <div>
       <Navbar />
       <Content />
-      <ShowProducts />
+      <ShowProducts products={ products }/>
       <Aboute />
       <Contect />
     </div>

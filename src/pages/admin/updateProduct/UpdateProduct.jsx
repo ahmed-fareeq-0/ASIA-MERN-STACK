@@ -1,21 +1,26 @@
-import './styleAddproducts.scss'
+import './../addProducts/styleAddproducts.scss';
 
-//added new
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from '@firebase/storage';
 import axios from 'axios';
 import jwt from 'jwt-decode';
 
-import { addProductURI } from '../../../lib/utility';
+import { updateProductURI } from '../../../lib/utility';
 import app from '../../../lib/firebase';
-/////////////////////////
 
-const AddProducts = () => {
-/////////////////////////
+const UpdateProduct = () => {
+  
+  let params = useParams();
+
+  const productId = params.id;
+
   const [ product, setProduct ] = useState({
     title:'',
     desc:''
   });
+
+  console.log(productId)
 
   const [ file, setFile ] = useState(null);
 
@@ -64,8 +69,8 @@ const AddProducts = () => {
             }
           }
         
-          axios.post( addProductURI, data, config ).then( (res) => {
-            if(res.data === "added"){
+          axios.put( `${updateProductURI}/${productId}`, data, config ).then( (res) => {
+            if(res.status === 200){
                 window.location.assign('/')
             } else {
               alert(res.data)
@@ -91,26 +96,39 @@ const AddProducts = () => {
       window.location.assign("/Login");
     }
   }, []);
-///////////////////
+
   return (
     <div className='containerAddProducts'>
-    <h1 className='titleAddproducts'>اضافة منتج</h1>
+    <h1 className='titleAddproducts'>تعديل المنتج</h1>
       <div className='wrapperAddproducts'>
-
         <form className='formAddproducts' >
-              <input type="file" accept="image/png, image/jpg, image/gif, image/jpeg" name='image' onChange={ (e)=> setFile(e.target.files[0]) } required/>
+              <input 
+              type="file"
+              name='image'
+              onChange={ (e)=> setFile(e.target.files[0]) }
+              required
+              />
 
-              <input type='text' name='title' placeholder='أسم المنتج' value={ product.title } onChange={ handleChange } required />
+              <input 
+              type='text'
+              name='title'
+              placeholder='أسم المنتج'
+              value={ product.title } 
+              onChange={ handleChange }
+              required 
+              />
 
-              <textarea name='desc' placeholder="الوصف" value={ product.desc } onChange={ handleChange } required ></textarea>
-              <button onClick={ handleSubmit }>اضافة</button>
+              <textarea
+              placeholder="الوصف"
+              name='desc'
+              value={ product.desc }
+              onChange={ handleChange }
+              required></textarea>
+              <button onClick={ handleSubmit }>تعديل</button>
         </form>
-
       </div>
     </div>
   );
 }
 
-export default AddProducts;
-
-
+export default UpdateProduct;
