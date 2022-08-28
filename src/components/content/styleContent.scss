@@ -11,7 +11,7 @@
         .wrapperContent {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            // align-items: center;
 
             .left{
                 background-color: red;
@@ -71,8 +71,7 @@
 
 @media screen and (min-width:320px) and (max-width:768px){
     .containerContent{
-
-        
+        width: 95%;
         .wrapper1{
             
             
@@ -110,3 +109,4 @@
         }
     }
 }
+

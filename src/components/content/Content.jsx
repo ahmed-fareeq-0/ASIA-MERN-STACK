@@ -5,7 +5,7 @@ import './styleContent.scss'
 
 const Content = () => {
   return (
-    <div className='containerContent'>
+    <div className='containerContent' id='content'>
       <div className='wrapper1'>
       <div className='wrapperContent'>
         <div className='left'></div>

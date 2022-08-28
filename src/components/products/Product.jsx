@@ -13,7 +13,7 @@ function Product({ products }) {
                     <img className='imgProduct' src={item.image} alt='' />
                           <div className='productInfo'>
                               <h3 className='titleProduct'>{item.title}</h3>
-                              <div className='descProduct'>{item.desc}</div>
+                              <p className='descProduct'>{item.desc}</p>
                           </div> 
                     </div>
               </div> 
@@ -24,12 +24,3 @@ function Product({ products }) {
 }
 
 export default Product
-
-{/* <div className='ProductShow' key={item._id} > 
-                        
-<img className='imgProduct' src={item.image} alt='' />
-<div className='productInfo'>
-    <h3 className='titleProduct'>{item.title}</h3>
-    <div className='descProduct'>{item.desc}</div>
-</div> 
-</div>  */}
