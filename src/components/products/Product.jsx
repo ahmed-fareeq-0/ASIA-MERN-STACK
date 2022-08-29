@@ -13,7 +13,7 @@ function Product({ products }) {
                     <img className='imgProduct' src={item.image} alt='' />
                           <div className='productInfo'>
                               <h3 className='titleProduct'>{item.title}</h3>
-                              <p className='descProduct'>{item.desc}</p>
+                              <p className='descProduct' style={{'height':'180px'}}>{item.desc}</p>
                           </div> 
                     </div>
               </div> 

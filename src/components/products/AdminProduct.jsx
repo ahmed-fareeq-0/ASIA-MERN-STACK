@@ -19,8 +19,8 @@ function AdminProduct({ products }) {
     }
     
     const handelDelete = async(itemId) =>{
-        axios.delete(`${deleteProductURI}/${itemId}`, config).then((res) => {
-          if(res.data === 'deleted'){
+        await axios.delete(`${deleteProductURI}/${itemId}`, config).then((res) => {
+          if(res.status === 200){
             window.location.reload()
           } else {
             console.log(res)

@@ -1,86 +1,86 @@
-.containerAddProducts{
+// .containerAddProducts{
     
-    header{
-    color: #D83636;
-    font-size: 42px;
-    font-weight: bold;
-    text-align: center;
+//     header{
+//     color: #D83636;
+//     font-size: 42px;
+//     font-weight: bold;
+//     text-align: center;
 
-    div{
-        height: 1px;
-        width: 50%;
-        margin: 0 auto;
-        background: #fff;
-    }
-}
-    direction: rtl;
+//     div{
+//         height: 1px;
+//         width: 50%;
+//         margin: 0 auto;
+//         background: #fff;
+//     }
+// }
+//     direction: rtl;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
     
-    .titleAddproducts{
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        color: #FFF;
-        font-weight: 500;
-    }
+//     .titleAddproducts{
+//         text-align: center;
+//         margin-top: 50px;
+//         margin-bottom: 50px;
+//         color: #FFF;
+//         font-weight: 500;
+//     }
 
-    .wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+//     .wrapper{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
 
-        .form{
+//         .form{
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             width: 50%;
 
-            input[type="text"],
-            input[type="file"],
-            textarea{
-                background-color: transparent;
-                width: 70%;
-                outline: none;
-                margin-bottom: 25px;
-                border: 1px solid rgb(224, 224, 224);
-                border-radius: 5px;
-                color: #fff;
-                padding: 10px;
-            }
+//             input[type="text"],
+//             input[type="file"],
+//             textarea{
+//                 background-color: transparent;
+//                 width: 70%;
+//                 outline: none;
+//                 margin-bottom: 25px;
+//                 border: 1px solid rgb(224, 224, 224);
+//                 border-radius: 5px;
+//                 color: #fff;
+//                 padding: 10px;
+//             }
 
             
-            button{
-                cursor: pointer;
-                width: 70%;
-                border: none;
-                background: #D83636;
-                color: #FFF;
+//             button{
+//                 cursor: pointer;
+//                 width: 70%;
+//                 border: none;
+//                 background: #D83636;
+//                 color: #FFF;
                 
-                padding: 10px;
-                font-size: 15px;
-            }
-        }
-    }
-}
+//                 padding: 10px;
+//                 font-size: 15px;
+//             }
+//         }
+//     }
+// }
 
-@media screen and (min-width:320px) and (max-width:768px){
-    .containerAddProducts{
-        width: 90%;
-        margin: auto;
+// @media screen and (min-width:320px) and (max-width:768px){
+//     .containerAddProducts{
+//         width: 90%;
+//         margin: auto;
 
-        .titleAddproducts{
-            font-size: 26px;
-        }
+//         .titleAddproducts{
+//             font-size: 26px;
+//         }
 
-        .wrapper{
-            .form{
-                width: 100%;
-            }
-        }
-    }
-}
+//         .wrapper{
+//             .form{
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
