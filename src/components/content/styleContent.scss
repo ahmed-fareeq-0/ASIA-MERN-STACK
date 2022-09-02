@@ -1,112 +1,81 @@
 .containerContent {
-    width:90%;
-    margin: auto;
-    height: calc(100vh - 60px);
-    color: #fff;
 
+    height: 100vh;
+    direction: rtl;
+    background-image: url('./../../../public/image/Web\ 1920\ –\ 1.png');
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    .wrapper1 {
-        padding: 100px 0;
+    .informationContent{
+        color: #fff;
+        padding: 0 2rem;
 
-        .wrapperContent {
-            display: flex;
-            justify-content: space-between;
-            // align-items: center;
-
-            .left{
-                background-color: red;
-                
-            }
-    
-             .rightContent {
-                direction: rtl;
-                
-                
-                
-                .title {
-                    font-size: 3rem;
+        .title-information-Content {
+            font-size: 3rem;
         
-                    .titleActive{
-                        color: #a20717;
-                    }
-                }
-        
-                .desc{
-                    margin: 25px 0 35px 0;
-                    font-size: 25px;
-                }
-        
-                .linkBtn {
-                    color: #a20717;
-                }
-        
-                .btn{
-                    display: inline-block;
-                    padding: 7px 20px;
-                    background-color: aliceblue;
-                    font-size: 20px;
-                    font-weight: 600;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    z-index: 3;
-                    
-                    
-                }
-        
-                .btnActive{
-                    margin-right: 20px;
-                    border: 1px solid #fff;
-                    background-color: inherit;
-                    color: #fff;
-                   
-        
-                    .fa {
-                        margin-right: 8px;
-                    }
-                }
+            .titleActive{
+                color: #d33636;
             }
         }
+        
+        .desc-information-Content{
+            margin: 25px 0 35px 0;
+            font-size: 25px;
+        }
+        
+        .linkBtn {
+            color: #d33636;
+        }
+        
+        .btn{
+            display: inline-block;
+            padding: 7px 20px;
+            background-color: aliceblue;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            
+            
+        }
+        
+        .btnActive{
+            margin-right: 20px;
+            border: 1px solid #fff;
+            background-color: inherit;
+            color: #fff;
+            
+
+            .fa {
+                margin-right: 8px;
+            }
+        }
+
     }
 }
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:1024px){
     .containerContent{
-        width: 95%;
-        .wrapper1{
-            
-            
-
-
-            .wrapperContent{
-                flex-direction: column;
-                
-                
-                
-                .left{
-                    display: none;
-                }
-
-                .rightContent{
-                    z-index: -1;
-                    
-                    .title{
-                        font-size: 25px;
-                        
-                    }
-
-                    .desc{
-                        margin: 20px 0 35px 0;
-                        font-size: 18px;
-                    }
-
-                    .btn{
-                       
-                        padding: 5px 15px;
-                        font-size: 18px;
-                    }
-                }
+        height: calc(100vh - 60px);
+        .informationContent{
+            padding: 0 1.5rem;
+            .title-information-Content {
+                font-size: 2rem;
             }
+
+            .desc-information-Content{
+                font-size: 18px;
+            }
+
+            .btn{
+                padding: 5px 15px;
+                font-size: 18px;
+                
+            }
+
         }
+
     }
 }
-

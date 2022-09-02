@@ -1,53 +1,50 @@
+import {useRef} from 'react';
+import {FaBars, FaTimes} from 'react-icons/fa'
+
 import './styleNavbar.scss'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import { useState } from 'react'
+import logo from './logo.png'
 
 
+var one = 0;
 
+function click1() { 
+  one++;
 
+  setTimeout(function reset() {
+    one = 0;
+  }, 500);
+
+  if (one === 3) {
+    window.location.assign('/login')
+  }
+}
 const Navbar = () => {
 
-  const [show, setShow] = useState(false)
+  const navRef = useRef()
 
-  // sohw Hamburger 
-  const showHamburger = () => {
-    setShow(!show)
-  } 
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responive_nav')
+  }
 
   return (
+    <header className='containerNavbar'>
 
-    <div className='containerNavbar'>
-      <div className='wrapperNavbar'>
+    <nav ref={navRef}>
 
-      <div className='rightNavbar'>
-          <a className='link LinkLeft' href='#contact'>اتصل بنا</a>
-          <a className='link' href='#about'>من نحن</a>
-          <a className='link' href='#products'>المنتجات</a>
-          <a className='link active' href='#content'>الرئيسية</a>
-        </div>
-
+        <a onClick={showNavbar} className='linkNav' href='#contact'>اتصل بنا</a>
+        <a onClick={showNavbar} className='linkNav' href='#about'>من نحن</a>
+        <a onClick={showNavbar} className='linkNav' href='#products'>المنتجات</a>
+        <a className='linkNav activeLink' href='#content' onClick={click1} >الرئيسية</a>
         
-        <div className='wrpperResponsiveNavbar'>
-          <GiHamburgerMenu className='iconHamburger' onClick={ () => showHamburger()} />
+        <button className='nav-btn nav-close-btn' onClick={showNavbar}> <FaTimes /> </button>
+    </nav>
+    
+    <button className='nav-btn' onClick={showNavbar} > <FaBars /> </button>
 
-          <a className='logoResponsive' href='/'><h1>اسيا</h1></a>
-        </div>
-
-        <div className='HamburgerNavbar' style={show ? {display:'flex'} : {display:'none'}} >
-          <a className='link active' href='#content'>الرئيسية</a>
-            <a className='link' href='#products'>المنتجات</a>
-            <a className='link' href='#about'>من نحن</a>
-            <a className='link' href='#contact'>اتصل بنا</a>
-            
-        </div>
-
-        <div className='leftNavbar'>
-          <a className='logo' href='/'><h1>اسيا</h1></a>
-        </div>
-
-      </div>
-    </div>
+    <a className='logo' href='/'><img src={ logo } alt="#" height={ '60px' }/></a>
+    </header>
   );
 }
 
 export default Navbar;
+

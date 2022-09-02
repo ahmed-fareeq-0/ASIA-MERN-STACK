@@ -27,9 +27,9 @@ const Contect = () => {
     <h1 className='titleContect'>أتصل بنا</h1>
       <div className='wrapperContact'>
         <div className='iconsContact'>
-        <BsFacebook className='icon'/>
-        <BsInstagram className='icon'/>
-        <BsTelegram className='icon'/>
+        <a href='https://ar-ar.facebook.com/'><BsFacebook className='icon'/></a>
+        <a href='https://www.instagram.com/'><BsInstagram className='icon'/></a>
+        <a href='https://web.telegram.org/'><BsTelegram className='icon'/></a>
         </div>
 
         <form className='formContact' ref={form} onSubmit={sendEmail}>
